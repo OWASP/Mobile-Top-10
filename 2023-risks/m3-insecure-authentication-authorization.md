@@ -55,7 +55,13 @@ The business impact of poor authentication and authorization will typically resu
 
 # Am I Vulnerable To 'Insecure Authentication / Authorization'?
 
-Understanding the difference between authentication and authorization is paramount in evaluating mobile application security. Authentication identifies an individual, while authorization verifies if the identified individual has the necessary permissions for a particular action. These two aspects are closely related, as authorization checks should immediately follow mobile device request authentication.
+Understanding the differences between identification, authentication, and authorization is paramount when evaluating mobile application security.
+
+* **Identification** is the process of determining who the user or entity is.
+* **Authentication** involves verifying whether the user or entity is genuinely who or what they claim to be.
+* **Authorization**, on the other hand, is the process of confirming whether the identified individual has the necessary permissions to perform a specific action.
+  
+These aspects are closely related. Authorization checks should immediately follow the authentication of a mobile device request, which is often combined with the identification process.
 
 Insecure authorization can occur when an organization fails to authenticate an individual before executing a requested API endpoint from a mobile device, as it is virtually impossible to conduct authorization checks on an incoming request without an established caller's identity.
 
